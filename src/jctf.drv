@@ -1,0 +1,124 @@
+//#include <font.defs>
+#include <media.defs>
+
+Manufacturer "Jetcom"
+Version 1.0
+
+// Specify this is a PostScript printer driver
+ColorDevice no
+Duplex no
+//Font *
+
+Filter application/vnd.cups-pdf 100 /usr/lib/cups/filter/pdf2tiff
+Filter application/vnd.cups-postscript 100 /usr/lib/cups/filter/ps2tiff
+
+Group General
+
+// Custom Media sizes
+#media "A4x3/A4x3 - 297x630mm" 297mm 630mm
+#media "A4x4/A4x4 - 297x840mm" 297mm 840mm
+#media "A4x5/A4x5 - 297x1050mm" 297mm 1050mm
+#media "A4x6/A4x6 - 297x1260mm" 297mm 1260mm
+
+#media "A3x3/A3x3 - 420x891mm" 420mm 891mm
+#media "A3x4/A3x4 - 420x1188mm" 420mm 1188mm
+#media "A3x5/A3x5 - 420x1485mm" 420mm 1485mm
+#media "A3x6/A3x6 - 420x1782mm" 420mm 1782mm
+
+#media "A2x3/A2x3 - 594x1260mm" 594mm 1260mm
+#media "A2x4/A2x4 - 594x1680mm" 594mm 1680mm
+#media "A2x5/A2x5 - 594x2100mm" 594mm 2100mm
+#media "A2x6/A2x6 - 594x2520mm" 594mm 2520mm
+
+#media "A1x3/A1x3 - 840x1782mm" 840mm 1782mm
+#media "A1x4/A1x4 - 840x2376mm" 840mm 2376mm
+#media "A1x5/A1x5 - 840x2970mm" 840mm 2970mm
+#media "A1x6/A1x6 - 840x3564mm" 840mm 3564mm
+
+// Supported page sizes
+HWMargins 5mm 5mm 5mm 5mm
+MediaSize A4
+*MediaSize A3
+MediaSize A4x3
+MediaSize A4x4
+MediaSize A4x5
+MediaSize A4x6
+MediaSize A2
+MediaSize A3x3
+MediaSize A3x4
+MediaSize A3x5
+MediaSize A3x6
+MediaSize A1
+MediaSize A2x3
+MediaSize A2x4
+MediaSize A2x5
+MediaSize A2x6
+MediaSize A0
+MediaSize A1x3
+MediaSize A1x4
+MediaSize A1x5
+MediaSize A1x6
+VariablePaperSize Yes
+MinSize 50mm 75mm
+MaxSize 914mm 15000mm
+
+// Trim On/Off
+Option "Trim/Trim Borders" PickOne AnySetup 10
+    Choice "Y/Enabled" ""
+    *Choice "N/Disabled" ""
+
+// Print Resolution
+Option "PRes/Print Resolution" PickOne AnySetup 10
+    Choice "r100/100dpi" ""
+    Choice "r200/200dpi" ""
+    *Choice "r300/300dpi" ""
+    Choice "r600/600dpi" ""
+
+// Cutter On/Off
+Option "Cutter/Cutter Control" PickOne AnySetup 10
+    *Choice "AU/Auto" ""
+    //Choice "Y/Enabled" ""
+    //Choice "N/Disabled" ""
+
+// Select Media types
+Option "MType/Media Type" PickOne AnySetup 10
+    *Choice "AU/Auto" ""
+    //Choice "PR/Plain paper" ""
+    //Choice "MF/Matte film" ""
+    //Choice "TR/Tracing paper" ""
+
+// Select Output Slot
+Option "OSlot/Output Slot" PickOne AnySetup 10
+    *Choice "AU/Auto" ""
+    //Choice "A3/Tray A3" ""
+    //Choice "OF/Disabled" ""
+
+{
+    ModelName "Torus-2070-TIFF"
+    PCFileName "Torus-2070-TIFF.ppd"
+    Throughput 9
+    Group General
+    Option "ISlot/Input Slot" PickOne AnySetup 10
+        *Choice "AU/Auto" ""
+        //Choice "CF/Continuous feed" ""
+        //Choice "OF/Optimal feed" ""
+        //Choice "R1/Upper drawer, roll# 1" ""
+        //Choice "R2/Upper drawer, roll# 2" ""
+        //Choice "R3/Lower drawer, roll# 3" ""
+        //Choice "R4/Lower drawer, roll# 4" ""
+}
+
+{
+    ModelName "Torus-1050-TIFF"
+    PCFileName "Torus-1050-TIFF.ppd"
+    Throughput 7
+    Group General
+    Option "ISlot/Input Slot" PickOne AnySetup 10
+        *Choice "AU/Auto" ""
+        //Choice "CF/Continuous feed" ""
+        //Choice "OF/Optimal feed" ""
+        //Choice "R1/Upper drawer, roll# 1" ""
+        //Choice "R2/Lower drawer, roll# 2" ""
+}
+
+#po ru "./locale/jctf_ru.po"  // Russian

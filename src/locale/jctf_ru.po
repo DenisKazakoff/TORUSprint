@@ -1,0 +1,77 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: jctf.drv\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: jctf.drv\n"
+
+msgid "Enabled"
+msgstr "Включено"
+
+msgid "Disabled"
+msgstr "Выключено"
+
+msgid "Auto"
+msgstr "Настройки принтера"
+
+msgid "Cutter Control"
+msgstr "Управление резаком"
+
+msgid "Trim Borders"
+msgstr "Обрезать пустые края"
+
+msgid "Print Resolution"
+msgstr "Разрешение печати"
+
+msgid "Media Type"
+msgstr "Материал печати"
+
+msgid "(not working yet) Plain paper"
+msgstr "(пока не работает) Обычная бумага"
+
+msgid "(not working yet) Matte film"
+msgstr "(пока не работает) Матовая пленка"
+
+msgid "(not working yet) Tracing paper"
+msgstr "(пока не работает) Копировальная бумага"
+
+msgid "Output Slot"
+msgstr "Устройство выдачи"
+
+msgid "Input Slot"
+msgstr "Устройство подачи"
+
+msgid "(not working yet) Tray A3"
+msgstr "(пока не работает) Лоток A3"
+
+msgid "(not working yet) Disabled"
+msgstr "(пока не работает) Выключено"
+
+msgid "(not working yet) Continuous feed"
+msgstr "(пока не работает) Непрерывная подача"
+
+msgid "(not working yet) Optimal feed"
+msgstr "(пока не работает) Оптимальная подача"
+
+msgid "(not working yet) Upper drawer, roll# 1"
+msgstr "(пока не работает) Верхний лоток, рулон №1"
+
+msgid "(not working yet) Upper drawer, roll# 2"
+msgstr "(пока не работает) Верхний лоток, рулон №2"
+
+msgid "(not working yet) Lower drawer, roll# 2"
+msgstr "(пока не работает) Нижний лоток, рулон №2"
+
+msgid "(not working yet) Lower drawer, roll# 3"
+msgstr "(пока не работает) Нижний лоток, рулон №3"
+
+msgid "(not working yet) Lower drawer, roll# 4"
+msgstr "(пока не работает) Нижний лоток, рулон №4"
