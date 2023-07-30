@@ -1,2 +1,2 @@
-# jetcom_tiff_driver
-CUPS driver compatible with TORUS (Jetcom) Teriostar printers
+#torus_tiff_driver
+CUPS driver compatible with Jetcom(R) TORUS(R) printers
